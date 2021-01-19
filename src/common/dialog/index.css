@@ -1,0 +1,73 @@
+.xl-dialog.interactHint .dg-header,.xl-dialog.interactHint2 .dg-header {
+  font-size: 22px;
+  color: #212121;
+  margin: 28px 28px 26px;
+}
+.xl-dialog.interactHint .interactInfo {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 10px;
+}
+.xl-dialog.interactHint .interactMainInfo {
+  font-size: 16px;
+  margin: 0;
+  color: #777;
+  font-weight: normal;
+}
+.xl-dialog.interactHint2 {
+  width: 640px;
+}
+.xl-dialog.interactHint2 .interactReplyInfoSelf {
+  font-size: 16px;
+  color: #757575;
+  font-weight: normal;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 128px;
+}
+.xl-dialog.interactHint2 .interactHint2MessageBox>h4 {
+  color: #757575;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.xl-dialog.interactHint2 .dg-content {
+  margin: 0 30px;
+}
+.xl-dialog.interactHint2 .dg-footer {
+  align-items: center;
+  bottom: 30px;
+}
+.xl-dialog.interactHint2 .InteractConfirm {
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #0096ff;
+  color: #fff;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.xl-dialog.updateServiceWorkerBox,.xl-dialog.disConnectTip {
+  border-radius: 5px;
+  height: 250px;
+  width: 520px;
+  color: #000;
+  border: 1px solid #999;
+  box-shadow: 1px 1px 10px 3px #aaa;
+}
+.xl-dialog.updateServiceWorkerBox .dg-header,.xl-dialog.disConnectTip .dg-header {
+  margin: 50px 20px 0;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}
+.xl-dialog.updateServiceWorkerBox .dg-footer {
+  justify-content: space-between;
+}
+.xl-dialog.updateServiceWorkerBox .dg-footer .dg-btn, .xl-dialog.disConnectTip .dg-footer .dg-btn {
+  font-size: 16px;
+}

@@ -1,0 +1,642 @@
+#drawingContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: none;
+  z-index: 2021;
+  /* canbvas
+.containter #canvas{
+  position: absolute;
+  left: 0;
+  top:0;
+  overflow: hidden;
+}
+.containter #hitCanvas{
+  position: absolute;
+  left: 0;
+  top:0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.containter #ghostCanvas{
+  position: absolute;
+} */
+  /* 选择线条 */
+  /* eraser */
+  /*橡皮 start*/
+  /*橡皮 end*/
+  /*鼠标样式 start*/
+  /*鼠标样式 end*/
+  /* footer */
+}
+#drawingContainer div,
+#drawingContainer ul,
+#drawingContainer li,
+#drawingContainer p,
+#drawingContainer em,
+#drawingContainer h1,
+#drawingContainer h2,
+#drawingContainer h3,
+#drawingContainer h4,
+#drawingContainer h5,
+#drawingContainer h6,
+#drawingContainer input,
+#drawingContainer label,
+#drawingContainer select,
+#drawingContainer option,
+#drawingContainer textarea,
+#drawingContainer button,
+#drawingContainer fieldset,
+#drawingContainer legend {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  list-style: none;
+  font-size: 13px;
+  font-family: 'microsoft yahei', 'arial';
+  box-sizing: border-box;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  font-style: normal;
+}
+#drawingContainer img {
+  border: 0;
+}
+#drawingContainer .containter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(245, 245, 245, 0.95);
+}
+#drawingContainer #canvasBox {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  overflow: hidden;
+  position: absolute;
+  /* top: 0; */
+  bottom: 63px;
+  left: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#drawingContainer canvas {
+  bottom: 0;
+}
+#drawingContainer .containter .tool-box {
+  width: 730px;
+  height: 62px;
+  background: #fff;
+  position: absolute;
+  left: -50px;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 -2px 16px 0 rgba(8, 1, 3, 0.12);
+  border-radius: 4px 4px 0 0;
+}
+#drawingContainer .containter .tool-box .tool-box-btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#drawingContainer .containter .tool-box .tool-box-btn li {
+  height: 100%;
+  margin-left: 14px;
+  float: left;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .drag-top-btn {
+  width: 45px;
+  /* background: url(./images/small-drawing_06.png) 0px 12px no-repeat; */
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  line-height: 62px;
+  margin-left: 8px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .bar-btn {
+  width: 30px;
+  background: url(images/small-drawing_06.png) -39px 12px no-repeat;
+  margin-left: 9px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pencil-all {
+  width: 22px;
+  height: 95px;
+  position: relative;
+  margin: -33px 11px 0 14px;
+  cursor: pointer;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pencil-all.hide .pencil-long {
+  display: none;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pencil-all.hide .pencil-short {
+  display: block;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pencil-all .pencil-long {
+  width: 22px;
+  height: 95px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pencil-all .pencil-short {
+  width: 22px;
+  height: 95px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 40px;
+  display: none;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-black,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-white,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-red,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-blue {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 13px;
+  cursor: pointer;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-black.active,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-white.active,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-red.active,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-blue.active {
+  border: 2px solid #c8c8c8;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-black span,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-white span,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-red span,
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-blue span {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid #CCCCCC;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-black span {
+  background: #2e2e2e;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-white span {
+  background: #FFFFFF;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-red span {
+  background: #fa5d3e;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .color-piece-blue span {
+  background: #4f90ea;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .line-btn {
+  width: 136px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .line-btn .lines {
+  width: 100px;
+  height: 34px;
+  float: left;
+  margin-top: 13px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .line-btn .lines img {
+  width: 100%;
+  height: 100%;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .line-btn .arrow {
+  width: 12px;
+  height: 100%;
+  background: url(images/small-drawing_12.png) no-repeat center / contain;
+  float: left;
+  margin-left: 13px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .eraser-btn {
+  width: 42px;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .eraser-btn .iconfont {
+  pointer-events: none;
+  color: #999;
+  font-size: 30px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .eraser-btn.eraserActive {
+  width: 42px;
+  cursor: pointer;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .eraser-btn.eraserActive .iconfont {
+  color: #1884ff;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .large-btn {
+  width: 42px;
+  background: url(images/small-drawing_06.png) -167px 11px no-repeat;
+  cursor: pointer;
+  display: none;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .backout-btn {
+  width: 42px;
+  background: url(images/back.png) no-repeat center / 26px auto;
+  cursor: pointer;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .backout-btn:hover {
+  width: 42px;
+  background: url(images/small-drawing_13.png) no-repeat center / 26px auto;
+  cursor: pointer;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .background-btn {
+  width: 42px;
+  background: url(images/background.png) no-repeat center;
+  cursor: pointer;
+  margin-left: 0;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .background-btn:hover,
+#drawingContainer .containter .tool-box .tool-box-btn .background-btn.active {
+  background: url(images/background-hover.png) no-repeat center;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pointer-btn {
+  width: 42px;
+  cursor: pointer;
+  margin-left: 17px;
+  text-align: center;
+  line-height: 60px;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pointer-btn .iconfont {
+  font-size: 25px;
+  color: #a9a9a9;
+  pointer-events: none;
+}
+#drawingContainer .containter .tool-box .tool-box-btn .pointer-btn:hover .iconfont,
+#drawingContainer .containter .tool-box .tool-box-btn .pointer-btn.active .iconfont {
+  color: #4285f4;
+}
+#drawingContainer .containter .tool-box .tool-box-line {
+  width: 155px;
+  height: 280px;
+  background: #1c1c1d;
+  border-radius: 3px;
+  position: absolute;
+  left: 283px;
+  bottom: -5px;
+  display: none;
+}
+#drawingContainer .containter .tool-box .tool-box-line li {
+  width: 100%;
+  height: 54px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+#drawingContainer .containter .tool-box .tool-box-line li img {
+  width: 100%;
+  height: 100%;
+}
+#drawingContainer .containter .tool-box .tool-box-line li:nth-of-type(1).lineActive {
+  background: url(images/small-drawing_07.png) center no-repeat;
+  background-size: cover;
+  margin-top: 17px;
+}
+#drawingContainer .containter .tool-box .tool-box-line li:nth-of-type(2).lineActive {
+  background: url(images/small-drawing_07.png) center no-repeat;
+  background-size: cover;
+}
+#drawingContainer .containter .tool-box .tool-box-line li:nth-of-type(3).lineActive {
+  background: url(images/small-drawing_07.png) center no-repeat;
+  background-size: cover;
+}
+#drawingContainer .containter .tool-box .tool-box-line li:nth-of-type(4).lineActive {
+  background: url(images/small-drawing_07.png) center no-repeat;
+  background-size: cover;
+}
+#drawingContainer .eraser-totle {
+  width: 137px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: #202020;
+  right: 144px;
+  bottom: 69px;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: none;
+}
+#drawingContainer .eraser-totle .eraser1 {
+  width: 65px;
+  height: 60px;
+  float: left;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+}
+#drawingContainer .eraser-totle .eraser1 .iconfont {
+  font-size: 30px;
+  pointer-events: none;
+}
+#drawingContainer .eraser-totle .eraser1.curr-eraser1 {
+  cursor: pointer;
+}
+#drawingContainer .eraser-totle .eraser-delete {
+  width: 65px;
+  height: 60px;
+  float: left;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+}
+#drawingContainer .eraser-totle .eraser-delete .iconfont {
+  font-size: 26px;
+  pointer-events: none;
+}
+#drawingContainer .eraser-totle .eraser-slip1 {
+  width: 184px;
+  height: 40px;
+  float: left;
+  border-radius: 20px;
+  background: #313131;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 23px;
+  cursor: pointer;
+  display: none;
+}
+#drawingContainer .eraser-totle .eraser-slip1 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#drawingContainer .eraser-totle .eraser-slip1 span {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  color: #ccc;
+}
+#drawingContainer .eraser-totle .eraser-slip2 {
+  width: 184px;
+  height: 40px;
+  float: left;
+  border-radius: 20px;
+  background: #313131;
+  position: relative;
+  margin-top: -39px;
+  margin-left: 23px;
+  display: none;
+  cursor: pointer;
+}
+#drawingContainer .eraser-totle .eraser-slip2 span {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  color: #ccc;
+}
+#drawingContainer .eraser-totle .eraser-slip2 img {
+  position: absolute;
+  left: 144px;
+}
+#drawingContainer .cur-pen {
+  cursor: url(assets/cur/pen.cur) 0 24, pointer;
+}
+#drawingContainer .cur-eraser {
+  cursor: url(assets/ico/eraser.ico) 24 24, pointer;
+}
+#drawingContainer .left {
+  float: left;
+}
+#drawingContainer .right {
+  float: right;
+}
+#drawingContainer .drawing-footer {
+  height: 63px;
+  background: linear-gradient(0deg, #313232, #3D3F3F);
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#drawingContainer .drawing-footer .drag {
+  width: 104px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 24px;
+  cursor: pointer;
+}
+#drawingContainer .drawing-footer .drag img {
+  margin-right: 9px;
+}
+#drawingContainer .drawing-footer .scale {
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-weight: 400;
+  color: #35e2a8;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+#drawingContainer .drawing-footer .scale .scale-num {
+  width: 40px;
+}
+#drawingContainer .drawing-footer .scale .box {
+  width: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 13px;
+}
+#drawingContainer .drawing-footer .process-box {
+  width: 200px;
+  height: 4px;
+  background: #c1ddd4;
+  border-radius: 2px;
+}
+#drawingContainer .drawing-footer.small .process-box {
+  width: 100px;
+}
+#drawingContainer .drawing-footer .processing {
+  height: 4px;
+  background: #35e2a8;
+  border-radius: 2px;
+}
+#drawingContainer .drawing-footer .process-btn {
+  width: 48px;
+  height: 12px;
+  background: #35e2a8;
+  border-radius: 6px;
+  margin-top: -8px;
+}
+#drawingContainer .drawing-footer.small .process-btn {
+  width: 24px;
+}
+#drawingContainer .template-tool-box {
+  width: 1140px;
+  height: 216px;
+  background: #f5f5f5;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  margin-left: -570px;
+}
+#drawingContainer .tool-group-box {
+  height: 56px;
+  background: #fff;
+  border-radius: 4px 4px 0 0;
+  font-size: 14px;
+}
+#drawingContainer .default-bg {
+  height: 56px;
+  display: inline-block;
+  line-height: 56px;
+  padding: 0 26px;
+  background: #868b86;
+  border-radius: 4px 0 0 0;
+  cursor: pointer;
+}
+#drawingContainer .default-bg.active {
+  background: #0060ff;
+  color: #fff;
+}
+#drawingContainer .tool-group-tab {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  margin-left: 50px;
+}
+#drawingContainer .tool-group-tab li {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 26px;
+  border-radius: 16px 16px 16px 16px;
+}
+#drawingContainer .tool-group-tab li.active {
+  background: #0060ff;
+  color: #fff;
+}
+#drawingContainer .bdColor-text {
+  float: right;
+  color: black;
+  margin-right: 18px;
+  height: 100%;
+  line-height: 56px;
+  text-align: right;
+  font-size: 14px;
+}
+#drawingContainer .bdColor-ul {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  float: right;
+  margin-right: 26px;
+}
+#drawingContainer .bdColor-ul li {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+  margin: 6px;
+  width: 28px;
+}
+#drawingContainer .bdColor-ul li.active {
+  border: 3px solid #62af52;
+}
+#drawingContainer .group-bg-container {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+#drawingContainer .group-bg-box {
+  height: 123px;
+  overflow: hidden;
+  width: 1020px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#drawingContainer .group-bg-box li {
+  float: left;
+  margin-left: 40px;
+  /* width: 112px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  flex: 0 0 112px;
+}
+#drawingContainer .group-bg-box li > div {
+  width: 84px;
+  height: 84px;
+  background: #fff;
+  border: 3px solid rgba(187, 216, 180, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#drawingContainer .group-bg-box li.active > div {
+  border: 3px solid #62af52;
+}
+#drawingContainer .group-bg-box li .bg-desp {
+  color: #666;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 14px;
+}
+#drawingContainer .group-bg-box li:first-child {
+  margin-left: 0;
+}
+#drawingContainer .group-bg-container button {
+  position: absolute;
+  width: 30px;
+  height: 72px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+#drawingContainer .group-bg-container .prev {
+  left: 0;
+  background: url('images/prev.png');
+  background-size: 100% 100%;
+}
+#drawingContainer .group-bg-container .prev:disabled {
+  background: url('images/prev-disable.png');
+}
+#drawingContainer .group-bg-container .next {
+  right: 0;
+  background: url('images/next.png');
+  background-size: 100% 100%;
+}
+#drawingContainer .group-bg-container .next:disabled {
+  background: url('images/next-disable.png');
+}

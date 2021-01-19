@@ -1,0 +1,174 @@
+<section id="drawingContainer">
+    <!--黑板区 start-->
+    <div class="containter" id="containter" style="touch-action: none;">
+      <div id="canvasBox" class="cur-pen"></div>
+      <div class="drawing-footer">
+        <!-- 底测工具栏 start -->
+        <div class="tool-box">
+          <ul class="tool-box-btn" id="tool_box">
+            <li class="pointer-btn" id="pointer">
+              <span class="iconfont icon-zhizhen"></span>
+            </li>
+            <!-- <li class="drag-top-btn" id="hide"></li> -->
+            <li class="pencil-all" id="pencil">
+              <div class="pencil-long" id="pencilLong">
+                <svg
+                  version="1.1"
+                  id="图形"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="423.966 45.667 208.2 898.8"
+                  enable-background="new 423.966 45.667 208.2 898.8"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g id="XMLID_107_">
+                      <path
+                        id="XMLID_110_"
+                        fill="#D1C19B"
+                        d="M480.667,421.367h8.8c4.4-28.2,20.8-49.1,40.4-49.1c19.6,0,36,21,40.4,49.1h7.8c4.4-28.2,20.8-49.1,40.4-49.1c0.3,0,0.5,0.1,0.7,0.1l-89.3-326.7l-91.6,326.8c0.6,0,1.3-0.2,1.9-0.2C459.767,372.267,476.267,393.267,480.667,421.367z"
+                      />
+                      <path
+                        id="XMLID_109_"
+                        fill="#000000"
+                        d="M619.266,372.367c-0.3,0-0.5-0.1-0.7-0.1c-19.6,0-46.4,21-50.9,49.1h2.6c-4.4-28.2-20.8-49.1-40.4-49.1c-19.6,0-36,21-40.4,49.1h1.6c-4.4-28.2-31.2-49.1-50.9-49.1c-0.7,0-1.3,0.1-1.9,0.2l-14.3,49v523h208.2v-523L619.266,372.367z"
+                      />
+                      <polygon
+                        id="XMLID_108_"
+                        fill="#000000"
+                        points="491.867,180.967 529.867,45.667 566.867,180.967"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="pencil-short" id="pencilShort">
+                <img src="./assets/svg/pencil-short.svg" alt="" />
+              </div>
+            </li>
+            <li class="color-piece-black active" id="black">
+              <span></span>
+            </li>
+            <li class="color-piece-white" id="white">
+            <span></span>
+            </li>
+            <li class="color-piece-red" id="red">
+              <span></span>
+            </li>
+            <li class="color-piece-blue" id="blue">
+              <span></span>
+            </li>
+            <li class="line-btn" id="line">
+              <div class="lines">
+                <img id="line_img"  src="./images/small-drawing_08.png"/>
+              </div>
+              <div class="arrow"></div>
+            </li>
+            <li class="eraser-btn" id="eraser">
+              <span class="iconfont icon-xiangpi-01"></span>
+            </li>
+            <li class="large-btn" id="largeBtn"></li>
+            <li class="backout-btn" id="undo"></li>
+            <li class="bar-btn" id="barBtn"></li>
+            <li class="background-btn" id="background"></li>
+            <li class="drag-top-btn" id="hide">退出</li>
+          </ul>
+          <ul class="tool-box-line" id="line_list" style="display: none;">
+            <li data-line="3" class="lineActive" data-image="smallDrawing08" >
+              <img class="haveClass" src="./images/small-drawing_01.png" />
+            </li>
+            <li  data-line="5"   data-image="smallDrawing09"  >
+              <img class="haveClass" src="./images/small-drawing_02.png" />
+            </li>
+            <li  data-line="10"  data-image="smallDrawing10" >
+              <img  class="haveClass" src="./images/small-drawing_03.png"  />
+            </li>
+            <li  data-line="15"  data-image="smallDrawing11" >
+              <img  class="haveClass" src="./images/small-drawing_04.png"/>
+            </li>
+          </ul>
+          <!-- 橡皮 -->
+          <ul class="eraser-totle" id="eraser-totle">
+            <li class="eraser1" id="eraser1"><span class="iconfont icon-xiangpi-01"></span></li>
+            <li class="eraser-delete" id="eraser-delete"><span class="iconfont icon-lajitong"></span></li>
+            <li class="eraser-slip1" id="eraser-slip1">
+              <span>右滑清除所有笔迹</span>
+              <img id="eraser_img" src="./images/del-none.png" draggable="false"/>
+            </li>
+            <li class="eraser-slip2" id="eraser-slip2">
+              <span>松开确认清除</span>
+              <img src="./images/del-none.png" draggable="false" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="scale right">
+          <div class="scale-num left" id="scale-num">100%</div>
+          <div class="box right">
+            <div class="process-box" id="process-box">
+              <div
+                class="processing"
+                id="processing-slider"
+                style="width: 24%;"
+              ></div>
+              <div
+                class="process-btn"
+                id="process-btn"
+                style="margin-left: calc(24% - 48px);"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- 底测工具栏 end -->
+      </div>
+      <div
+        class="template-tool-box"
+        id="template-tool-box"
+        style="display: none;"
+      >
+        <div class="tool-group-box">
+          <div
+            class="default-bg left active"
+            id="Default"
+            style="display: none;"
+          >
+            恢复默认背景
+          </div>
+          <ul class="tool-group-tab left" id="tool-group-tab"></ul>
+          <ul class="bdColor-ul" id="bdColor_ul"></ul>
+          <span class='bdColor-text'>背景</span>
+        </div>
+        <div class="group-bg-container">
+          <button class="prev" id="prev-btn"></button>
+          <ul class="group-bg-box" id="group-bg-box"></ul>
+          <button class="next" id="next-btn"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    !Event.prototype.propagationPath &&
+      (Event.prototype.propagationPath = function propagationPath() {
+        var polyfill = function (evt) {
+          var element = evt.target;
+          var pathArr = [element];
+          if (element === null || element.parentElement === null) {
+            return [];
+          }
+          while (element.parentElement !== null) {
+            element = element.parentElement;
+            pathArr.unshift(element);
+          }
+          console.log("polyfill:event.path");
+          return pathArr;
+        };
+        return (
+          this.path ||
+          (this.composedPath && this.composedPath()) ||
+          polyfill(this)
+        );
+      });
+  </script>
+

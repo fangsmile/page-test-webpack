@@ -1,0 +1,55 @@
+.xl-dialog-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2040;
+  font-family: 'web hiragino sans gb', 'hiragino sans gb';
+}
+.xl-dialog {
+  border-radius: 5px;
+  min-height: 250px;
+  width: 520px;
+  height: fit-content;
+  background: white;
+  color: black;
+  position: relative;
+}
+.xl-dialog .dg-header {
+  color: #555;
+  font-size: 24px;
+  margin: 30px 20px 20px;
+  height: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  pointer-events: none;
+}
+.xl-dialog .dg-content {
+  color: #777;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 20px;
+  pointer-events: none;
+}
+.xl-dialog .dg-footer {
+  position: absolute;
+  padding: 0 35px;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.xl-dialog .dg-footer .dg-btn {
+  color: #1e90ff;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.xl-dialog .dg-footer .dg-btn:last-child {
+  margin-right: 0;
+}

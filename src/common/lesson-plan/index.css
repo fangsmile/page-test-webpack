@@ -1,0 +1,171 @@
+#lessonPlan-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.lessonPlan-box {
+  width: 1000px;
+  height: 876px;
+  margin: 0 auto;
+  background: #141f2c;
+}
+.lessonPlan-header {
+  height: 64px;
+  line-height: 64px;
+  background: #040d17;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lessonPlan-header .lessonPlan-close {
+  width: 14px;
+  height: 14px;
+  background: url('./img/lesson-close.png');
+  cursor: pointer;
+}
+.lessonPlan-box .lessonPlan-header .first-page span:nth-child(1) {
+  font-size: 18px;
+  color: #fff;
+}
+.lessonPlan-box .lessonPlan-header .first-page  span:nth-child(2) {
+  font-size: 13px;
+  color: #7d8fa4;
+  margin-left: 10px;
+}
+.lessonPlan-box .lessonPlan-header .second-page {
+  display: none;
+}
+.lessonPlan-box .lessonPlan-header .second-page span:nth-child(1) {
+  background: url('./img/back-first.png');
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+.lessonPlan-box .lessonPlan-header .second-page  span:nth-child(2) {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 20px;
+}
+.lessonPlan-content {
+  height: calc(100% - 64px);
+  overflow-y: scroll;
+  padding: 0 22px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.lessonPlan-detail {
+  height: calc(100% - 108px);
+  overflow: hidden;
+  margin: 22px;
+  box-sizing: border-box;
+  margin-top: 22px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 22px 24px;
+  position: relative;
+  display: none;
+}
+.lessonPlan-detail h3 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 18px;
+  color: #212121;
+  font-weight: bold;
+}
+.lessonPlan-detail p {
+  font-size: 14px;
+  color: #757575;
+  overflow-y: scroll;
+  max-height: 580px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 24px 0;
+}
+.lessonPlan-item {
+  height: 180px;
+  background: #fff;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  padding: 22px 22px 26px 22px;
+  box-sizing: border-box;
+  position: relative;
+}
+.lessonPlan-item h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: #212121;
+  font-weight: bold;
+}
+.lessonPlan-item .item-content {
+  font-size: 14px;
+  color: #757575;
+}
+.lessonPlan-item .item-footer {
+  position: absolute;
+  bottom: 26px;
+  font-size: 14px;
+  width: calc(100% - 44px);
+  display: flex;
+  justify-content: space-between;
+}
+.lessonPlan-item .item-footer .time {
+  color: #999;
+}
+.lessonPlan-item .item-footer a {
+  color: #4285f4;
+  cursor: pointer;
+}
+.lessonPlan-item .item-footer a.check {
+  margin-right: 40px;
+}
+.lessonPlan-box  .bind {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 66px;
+  height: 66px;
+  background: url('./img/binded.png');
+}
+.lessonPlan-item:first-child {
+  margin-top: 22px;
+}
+.lessonPlan-dialog {
+  box-shadow: 0 0 25px rgba(0, 0, 0, .2);
+}
+.xl-dialog.lessonPlan-dialog .dg-header {
+  color: #212121;
+  font-size: 20px;
+}
+.xl-dialog.lessonPlan-dialog .dg-content {
+  color: #757575;
+  font-size: 14px;
+}
+.xl-dialog.lessonPlan-dialog .dg-footer .dg-btn {
+  font-size: 14px;
+}
+.lessonPlan-save {
+  width: 150px;
+  height: 48px;
+  background: rgba(41,185,65,1);
+  box-shadow: 0 4px 10px 0 rgba(0,227,48,0.2);
+  border-radius: 24px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 48px;
+  right: 48px;
+}

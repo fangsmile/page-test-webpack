@@ -1,0 +1,1777 @@
+.components-section * {
+  list-style: none !important;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -webkit-user-select: none !important;
+  box-sizing: border-box !important;
+  font-family: 'web hiragino sans gb', 'hiragino sans gb w3', 'microsoft yahei';
+}
+.components-section {
+  width: 100% !important;
+  height: 64px !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  font-size: 13px !important;
+}
+.components-section .components-footer {
+  width: 100% !important;
+  height: 100% !important;
+  background: #131515 !important;
+  position: relative !important;
+  z-index: 2000;
+}
+.components-section.components-web-client .components-footer .components-the-more ul li:nth-child(1),
+.components-section.components-web-client .components-footer .components-the-more ul li:nth-child(3) {
+  display: none !important;
+}
+/* v3.8.0 */
+.components-section.components-web-client .components-footer .components-other-app ul.components-common-relosotion li:nth-child(2),
+.components-section.components-web-client .components-footer .components-other-app ul.components-common-relosotion li:nth-child(3),
+.components-section.components-web-client .components-footer .components-other-app ul.components-common-relosotion li:nth-child(7),
+.components-section.components-web-client .components-footer .components-other-app ul.components-common-relosotion li:nth-child(9) {
+  /* display: none !important; */
+}
+.components-section.components-web-client .components-footer .components-other-app ul.components-common-relosotion li:nth-child(9) {
+  display: block !important;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li:nth-child(9) {
+  display: none !important;
+}
+/* 3.6新添加 */
+.components-section .components-footer .components-user-login {
+  height: 64px !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 10 !important;
+}
+/*3.19*/
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-blackboard-writing {
+    display: block !important;
+    width: 54px !important;
+    margin-right: 6px;
+    line-height: 90px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-blackboard-writing .iconfont{
+    line-height: 50px;
+    font-size: 20px;
+}
+.components-preview .components-footer .components-user-login{
+    width: 231px !important;
+}
+.components-section .components-footer .components-user-login .components-cha{
+    width: 38px !important;
+    height: 38px !important;
+    background: url(../images/components-login-user.png) no-repeat center;
+    float: left !important;
+    margin: 13px 11px !important;
+    border-radius: 50% !important;
+    position: relative !important;
+    background-size: contain !important;
+}
+.components-section .components-footer .components-user-login .components-cha .components-phone{
+    width: 11px !important;
+    height: 14px !important;
+    position: absolute !important;
+    right: 1px !important;
+    bottom: 2px !important;
+    background: url(../images/components-no-openpad.png) no-repeat center !important;
+}
+.components-section .components-footer .components-user-login.active .components-cha .components-phone{
+    width: 11px !important;
+    height: 14px !important;
+    position: absolute !important;
+    right: 1px !important;
+    bottom: 2px !important;
+    background: url(../images/components-openpad.png) no-repeat center !important;
+}
+.components-section .components-footer .components-user-login.active .components-cha .components-phone.hide{
+    display: none;
+}
+.components-section .components-footer .components-user-login .userNameSchool{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100% !important;
+
+}
+.components-section .components-footer .components-user-login .userNameSchool #userNameCom,
+.components-section .components-footer .components-user-login .userNameSchool #schoolNameCom {
+  max-width: 180px !important;
+  color: #fff !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+  font-size: 14px !important;
+}
+@media screen and (max-width:1366px) {
+  .components-section .components-footer .components-user-login .userNameSchool #userNameCom,
+  .components-section .components-footer .components-user-login .userNameSchool #schoolNameCom {
+    max-width: 153px !important;
+  }
+}
+.components-preview .components-footer .components-user-login #userNamePreview{
+    display: block !important;
+    width: 170px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    float: left !important;
+    color: #fff !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    font-size: 12px !important;
+    margin-top:16px
+}
+.components-preview .components-footer .components-user-login #userComPreview{
+    display: block !important;
+    width: 170px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    float: left !important;
+    color: #fff !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    font-size: 12px !important;
+}
+.components-preview .components-footer .components-user-login span{
+    width: 170px !important;
+}
+.components-section .components-footer .components-the-more *{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.components-section .components-footer .components-the-more{
+    width: 30px !important;
+    height: 100% !important;
+    background: url(../images/more.png) no-repeat center !important;
+    float: left !important;
+    cursor: pointer !important;
+    margin-left: 15px !important;
+    position: relative !important;
+    visibility: hidden !important;
+    z-index: 11 !important;
+}
+.components-section .components-footer .components-the-more ul{
+    width: 130px !important;
+    background: #161E28 !important;
+    position: absolute !important;
+    bottom: 64px !important;
+    left: -15px !important;
+    display: none !important;
+    height: auto !important;
+}
+.components-section .components-footer .components-the-more ul.show{
+    display: block !important;
+}
+.components-section .components-footer .components-the-more ul li{
+    width: 100% !important;
+    height: 52px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+.components-section .components-footer .components-the-more ul li:last-child{
+    border-bottom: none !important;
+}
+.components-section .components-footer .components-the-more ul li .components-btn{
+    width: 24px !important;
+    height:24px !important;
+    float: left !important;
+    margin: 15px 6px 0 20px !important;
+}
+.components-section .components-footer .components-the-more ul li:nth-child(1) .components-btn{
+    background: url(../images/smaller.png) no-repeat center !important;
+}
+.components-section .components-footer .components-the-more ul li:nth-child(2) .components-btn{
+    background: url(../images/help.png) no-repeat center !important;
+}
+.components-section .components-footer .components-the-more ul li:nth-child(3) .components-btn{
+    background: url(../images/setting.png) no-repeat center !important;
+}
+.components-section .components-footer .components-the-more ul li:nth-child(4) .components-btn{
+    background: url(../images/close.png) no-repeat center !important;
+}
+.components-section .components-footer .components-the-more ul li span{
+    width: auto !important;
+    color: rgba(255,255,255,0.5) !important;
+    display: block !important;
+    float: left !important;
+    margin: 18px 0 0 5px !important;
+    text-align: left !important;
+    line-height: normal !important;
+    height: auto !important;
+}
+.components-section .components-footer .components-other-app{
+    /* width: 245px !important; */
+    height: 100% !important;
+    /* float: right !important; */
+    margin-bottom: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    z-index: 12 !important;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion{
+    width: auto !important;
+    height: 100% !important;
+    margin-right: 10px !important;
+    /* display: flex !important; */
+    margin-top: 0px !important;
+    visibility: visible;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li{
+    width: 35px !important;
+    height: 100% !important;
+    float: left !important;
+    cursor: pointer !important;
+    display: block !important;
+    position: relative;
+    text-align: center;
+    /* flex: 1 !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li .iconfont{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 64px;
+    font-size: 18px;
+    text-align: center;
+    pointer-events: none;
+
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-pickup{
+    background: url(../images/components-packup.png) no-repeat center !important;
+    display: none !important;
+}
+/* 1024分辨率 箭头出现*/components-screencut
+.components-section.components-resolution .components-footer .components-other-app ul.components-common-relosotion li.components-pickup {
+  display: block !important;
+}
+/* 客户端 2000分辨率  箭头加最小化*/ /* v3.8.0 */
+
+/* .components-section.components-resolution .components-footer .components-other-app ul.components-common-relosotion li:not(.components-pickup):not(.components-minilize):not(.components-fullscreen):not(.components-lockscreen):not(.components-screencut){
+    display: none !important;
+} */
+/* 上面注释去除了 not(.components-pickup) */
+.components-section.components-resolution .components-footer .components-other-app ul.components-common-relosotion li:not(.components-minilize):not(.components-fullscreen):not(.components-lockscreen):not(.components-screencut):not(.components-blackboard-writing):not(.components-video) {
+  display: none !important;
+}
+/* 4.9.0去除了展示工具条 .components-section.components-resolution .components-footer .components-other-app ul.components-common-relosotion li.components-pickup, */
+.components-section.components-resolution .components-footer .components-other-app ul.components-common-relosotion li.components-minilize {
+  display: block !important;
+}
+.components-section.components-resolution .components-footer .components-other-app ul.components-small-resolution li.components-screencut1 {
+  display: none !important;
+}
+/* 客户端 1024分辨率  */ /* v3.8.0 */
+.components-section.components-resolution1024 .components-footer .components-other-app ul.components-common-relosotion li:not(.components-minilize):not(.components-fullscreen):not(.components-lockscreen):not(.components-screencut):not(.components-video):not(.components-blackboard-writing) {
+  /* 4.9.0 去除了:not(.components-pickup) */
+  display: none !important;
+}
+.components-section.components-resolution1024 .components-footer .components-other-app ul.components-small-resolution li.components-screencut1 {
+  display: block !important;
+}
+/* web 1024分辨率  箭头加全屏*/    /* v3.8.0 */
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-common-relosotion li:not(.components-fullscreen):not(.components-lockscreen):not(.components-screencut):not(.components-blackboard-writing) {
+  /* 4.9.0 去除了:not(.components-pickup) */
+  display: none !important;
+}
+/* .components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-common-relosotion li.components-pickup, 4.9.0去除 */
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-common-relosotion li.components-fullscreen {
+  display: block !important;
+}
+/* 1024分辨率下 小按钮放在右侧  分为客户端和web端*/
+
+.components-section .components-footer .components-other-app ul.components-small-resolution {
+  width: 126px !important;
+  height: 84px !important;
+  background: #1e252c !important;
+  border-radius: 3px !important;
+  position: absolute !important;
+  right: 70px !important;
+  bottom: 64px !important;
+  /* padding-left: 0 !important; */
+  display: none !important;
+  margin: 10px 0;
+  padding: 5px 4px;
+
+}
+/* 1024分辨率下  *//* 客户端 */
+.components-section.components-resolution .components-footer .components-other-app ul.components-small-resolution.active {
+  display: block !important;
+}
+/* 1024分辨率下  *//* web端 */
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-small-resolution.active {
+  display: block !important;
+  width: 126px !important;
+  height: 47px !important;
+  background: #1e252c !important;
+  border-radius: 3px !important; /* v3.8.0 */
+  position: absolute !important;
+  right: 40px !important;
+  bottom: 64px !important;
+  /* padding-left: 0 !important; */
+  margin: 10px 0;
+  padding: 5px 4px;
+}
+/* v3.8.0 */
+/* .components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-small-resolution li:nth-of-type(2), */
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-small-resolution li.components-screencut1,
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-small-resolution li.components-keyboard1,
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-small-resolution li:nth-of-type(1) {
+  display: none !important;
+}
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-common-relosotion li.components-screencut {
+  display: none !important;
+}
+.components-section.components-resolution.components-web-client .components-footer .components-other-app ul.components-common-relosotion li.components-blackboard-writing {
+  display: none !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li {
+  width: 35px !important;
+  height: 35px !important;
+  float: left !important;
+  cursor: pointer !important;
+  margin-left: 4px;
+}
+
+/* v3.8.0 start*/
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-video1 div {
+  background: url(../images/sprite.png) no-repeat -178px 50% !important;
+  margin: auto;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-screencut1{
+    background: url(../images/sprite.png) no-repeat -207px 50% !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-drawing1{
+    /* background: url(../images/sprite.png) no-repeat -237px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-spoting1 {
+  background: url(../images/sprite.png) no-repeat -267px 50% !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-lockscreen1 {
+  background: url(../images/sprite.png) no-repeat -613px 50% !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-lockscreen1.unlock {
+  background: url(../images/sprite.png) no-repeat -575px 50% !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-keyboard1 {
+  background: url(../images/sprite.png) no-repeat -358px 50% !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-responder1 {
+  background: red;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-fullscreen1 {
+  background: url(../images/sprite.png) no-repeat -447px 50% !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-minilize1 {
+  background: url(../images/components-smaller.png) no-repeat center !important;
+}
+.components-section .components-footer .components-other-app ul.components-small-resolution li.components-screencut1 {
+  background: url(../images/sprite.png) no-repeat -207px 50% !important;
+}
+
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-video {
+  width: 50px !important;
+  margin: 0 4px 0 10px;
+  font-size: 12px;
+  line-height: 90px;
+  color: #fff;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-video .iconfont{
+    line-height: 46px;
+    font-size: 14px;
+
+}
+/* .components-section .components-footer .components-other-app ul.components-common-relosotion li.components-video div{
+    background: url(../images/sprite.png) no-repeat -178px 8px !important;
+    margin: auto;
+    width: 38px !important;
+} */
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-video.noneActive .iconfont{
+    /* background: url(../images/com-recoding.png) no-repeat center 14px !important; */
+    color: #424444;
+}
+
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-video.disabled .iconfont{
+    /* background: url(../images/com-recoding.png) no-repeat center 14px !important; */
+    color: #424444;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-screencut{
+    /* background: url(../images/sprite.png) no-repeat -207px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-drawing{
+    /* background: url(../images/sprite.png) no-repeat -237px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-spoting{
+    /* background: url(../images/sprite.png) no-repeat -267px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-lockscreen{
+    /* background: url(../images/sprite.png) no-repeat -613px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-lockscreen.unlock{
+    /* background: url(../images/sprite.png) no-repeat -575px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-lockscreen .iconfont::before{
+    content: "\e61f";
+    color: #fff;
+    font-size:28px;
+    pointer-events: none;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-lockscreen.unlock .iconfont::before{
+    content: "\e611";
+    color: #00ff9c;
+    pointer-events: none;
+
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-keyboard{
+    /* background: url(../images/sprite.png) no-repeat -358px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-keyboard .iconfont{
+    font-size: 24px;
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-fullscreen{
+    /* background: url(../images/sprite.png) no-repeat -447px 50% !important; */
+}
+.components-section .components-footer .components-other-app ul.components-common-relosotion li.components-minilize{
+    /* background: url(../images/components-smaller.png) no-repeat center !important; */
+}
+
+.components-section .components-footer .components-other-app .bubble {
+  width: 349px !important;
+  height: 82px !important;
+  background: url(../images/qipao.png) no-repeat center !important;
+  position: absolute !important;
+  right: 187px !important;
+  bottom: 41px !important;
+  display: none;
+  font-size: 16px !important;
+  text-align: center !important;
+  line-height: 67px !important;
+  color: #000 !important;
+}
+
+.components-section .components-footer .components-tool-tab{
+    width: 1064px !important;
+    height: 100% !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+    text-align: left !important;
+    z-index: 11;
+}
+.components-section .components-footer .components-tool-tab .components-middle{
+    width: 40px !important;
+    height: 64px !important;
+    background: url(../images/components-middle2.png) no-repeat center/40px !important;
+    position: absolute !important;
+    /* left: 0 !important; */
+    /* right: 0 !important; */
+    /* top: 0 !important; */
+    /* bottom: 0 !important; */
+    /* margin: auto !important; */
+    cursor: pointer !important;
+    display: inline-block;
+    /* margin-top: 0; */
+    /* left: 5px; */
+    /* visibility: visible; */
+    opacity: 1 !important;
+}
+.components-section .components-footer .components-tool-tab .components-left{
+    width: 484px !important;
+    height: 100% !important;
+    float: left !important;
+    /* background: pink; */
+    display: inline-block !important;
+    margin-top: 0px !important;
+    /* padding-left: 140px !important; */
+    text-align: center !important;
+    margin-right: 13px !important;
+    /* visibility: visible; */
+    margin-bottom: 0 !important;
+    opacity:1 !important;
+    font-size: 12px !important;
+    overflow: hidden !important;
+}
+.components-section .components-footer .components-tool-tab .components-left li{
+    width: 74px !important;
+    height: 50px !important;
+    margin: 10px 0px 7px 0px !important;
+    float: right !important;
+    cursor: pointer !important;
+    display: block !important;
+}
+.components-section .components-footer .components-tool-tab .components-left li img{
+    display: block;
+    margin: 0 auto!important;
+    width: 24px;
+    height: 24px;
+}
+.components-section .components-footer .components-tool-tab .components-left li span{
+    line-height: 13px !important;
+    display: block !important;
+    width: 60px !important;
+    position: static !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    margin: 0 auto !important;
+}
+.components-section .components-footer .components-tool-tab .components-left li[data-appId="editApp"]{
+    background:  #1F2B38 !important;
+    font-size: 14px !important;
+    line-height: 41px !important;
+    text-align: center !important;
+    color:rgba(255,255,255,0.3) !important;
+    border-radius: 5px !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 14px !important;
+    position: relative !important;
+    top: 2px !important;
+}
+
+/*屏幕分辨率小于1280时 间距缩小*/
+.components-section.components-resolution1024 .components-footer .components-tool-tab .components-left li {
+  width: 60px !important;
+}
+.components-section.components-resolution1024 .components-footer .components-tool-tab .components-left li[data-appId='editApp'] {
+  margin-right: 4px !important;
+}
+.components-section .components-footer .components-tool-tab .components-right {
+  width: 330px !important;
+  height: 61px !important;
+  margin-left: 50px;
+  /* float: right !important; */
+  /* border-radius: 5px !important; */
+  /* background: #2D3434 !important; */
+  /* margin: 14px 5px 7px 12px !important; */
+  /* cursor: pointer !important; */
+  display: inline-block !important;
+  text-align: left !important;
+  margin-bottom: 0 !important;
+}
+.components-section .components-footer .components-tool-tab .components-right.work {
+  margin-left: 26px;
+}
+.components-section .components-bounced {
+  width: 428px !important;
+  background: #161e28 !important;
+  position: absolute !important;
+  bottom: 64px !important;
+  /* 动态控制 左边的定位*/
+  /* left: 45% !important; */
+  display: none !important;
+  /* left: 0 !important;
+    right: 0 !important;
+    margin: auto !important; */
+  left: 696px !important;
+  box-shadow: 0 0 7px 3px rgba(0,0,0,0.5) !important;
+}
+.components-section .components-bounced .components-temp-app {
+  width: 100% !important;
+  height: 112px !important;
+  overflow: hidden;
+  background: #151616 !important;
+  display: none !important;
+}
+.components-section .components-bounced .components-temp-app * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.components-section .components-bounced .components-temp-app .components-title {
+  width: 100% !important;
+  height: 14px !important;
+  line-height: 14px !important;
+  text-align: left !important;
+  margin: 12px 0 2px !important;
+}
+.components-section .components-bounced .components-temp-app .components-title span:nth-child(1) {
+  font-size: 14px !important;
+  color: rgba(255,255,255,0.5) !important;
+  margin-left: 28px !important;
+}
+.components-section .components-bounced .components-temp-app .components-title span:nth-child(2) {
+  font-size: 14px !important;
+  color: #4261a2 !important;
+  margin-left: 256px !important;
+  cursor: pointer !important;
+}
+.components-section .components-bounced .components-temp-app .components-content {
+  width: 100% !important;
+  height: 93px !important;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-left-btn {
+  width: 12px !important;
+  height: 56px !important;
+  background: url(../images/left-btn.png) no-repeat center !important;
+  float: left !important;
+  cursor: pointer !important;
+  margin: 10px 0 0 12px !important;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-left-btn.disabled {
+  background: url(../images/left-btn-none.png) no-repeat center !important;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-right-btn {
+  width: 12px !important;
+  height: 56px !important;
+  background: url(../images/right-btn.png) no-repeat center !important;
+  float: left !important;
+  cursor: pointer !important;
+  margin-top: 10px !important;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-right-btn.disabled {
+  background: url(../images/right-btn-none.png) no-repeat center !important;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-plan {
+  width: 380px !important;
+  height: 76px !important;
+  overflow: hidden !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-plan li {
+  float: left !important;
+  width: 56px !important;
+  height: 56px !important;
+  background: url(../images/bg-black.png) no-repeat center !important;
+  background-size: contain !important;
+  line-height: 56px !important;
+  text-align: center !important;
+  color: rgba(255,255,255,0.2) !important;
+  font-size: 20px !important;
+  margin: 10px !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-plan li.active {
+  background: url(../images/bg-red.png) no-repeat center !important;
+  background-size: contain !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.components-section .components-bounced .components-temp-app .components-content .components-plan li img {
+  /* margin: 4px auto !important; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.components-section .components-bounced .components-lesson-info {
+  width: 100% !important;
+  height: 112px !important;
+  background: #212832 !important;
+  position: relative !important;
+  overflow: hidden;
+}
+.components-section .components-bounced .components-lesson-info .components-head {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  float: left !important;
+  margin: 26px 16px 20px 28px !important;
+  display: none !important;
+}
+.components-section .components-bounced .components-lesson-info .components-head img {
+  width: 100% !important;
+  height: 100% !important;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info {
+  width: 180px !important;
+  height: 76px !important;
+  float: left !important;
+  margin: 28px 16px 20px 28px !important;
+  color: rgba(255,255,255,0.6) !important;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info>.classNameBox {
+    margin: 0;
+    padding: 0;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info>.classNameBox #classNameCom{
+    max-width: 115px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    float: left;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info>.classNameBox::after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info>.classNameBox .changeClass{
+    color:rgb(35, 115, 215);
+    cursor: pointer;
+    margin-left: 12px;
+    display: block;
+    float: left;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info>span{
+    display: block;
+    width: 190px !important;
+    overflow: hidden !important;
+    height: 20px !important;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info span#unitNameCom{
+    margin-top: 6px !important;
+}
+.components-section .components-bounced .components-lesson-info .components-coueseware-info span:nth-child(3){
+    margin-top: 6px !important;
+    color: #2373d7 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    width: 64px !important;
+}
+.components-section .components-bounced .components-lesson-info .components-quit-lesson{
+    width: 112px !important;
+    height: 38px !important;
+    background: #209268 !important;
+    text-align: center !important;
+    line-height: 38px !important;
+    border-radius: 20px !important;
+    float: left !important;
+    position: absolute !important;
+    right: 24px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+    cursor: pointer !important;
+    color: rgba(255,255,255,0.5) !important;
+}
+.components-section .components-bounced .components-lesson-info .components-quit-lesson .conponents-quit-ican{
+    width: 18px !important;
+    height: 18px !important;
+    margin: 10px 3px 10px 27px !important;
+    /* background: url(../images/close.png) no-repeat center !important; */
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    float: left !important;
+}
+.components-section .components-bounced .components-lesson-info .components-quit-lesson span{
+    font-size: 14px !important;
+    display: block !important;
+    width: 34px !important;
+    height: 38px !important;
+    float: left !important;
+    color: #fff !important;
+}
+/* web端 没有设置按钮 */
+.components-section.components-web-client .components-bounced .components-lesson-info .conponents-info-help li#settingCom {
+  display: none !important;
+}
+
+
+.components-section .components-bounced .components-lesson-info .conponents-info-help{
+    height: 18px !important;
+    position: absolute !important;
+    right: 0px !important;
+    top: 10px !important;
+}
+.components-section .components-bounced .components-lesson-info .conponents-info-help li{
+    width: 18px !important;
+    height: 18px !important;
+    float: left !important;
+    cursor: pointer !important;
+    margin-right: 17px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 16px;
+}
+.components-section .components-bounced .components-lesson-info .conponents-info-help li#downloadCourseware{
+    /* background: url(../images/downCourseware.png) no-repeat center/auto 18px; */
+
+}
+.components-section .components-bounced .components-lesson-info .conponents-info-help li#helpCom{
+    /* background: url(../images/help.png) no-repeat center !important; */
+
+}
+.components-section .components-bounced .components-lesson-info .conponents-info-help li#settingCom{
+    /* background: url(../images/setting.png) no-repeat center !important;
+    display: block !important; */
+}
+.components-section .components-bounced .components-all-app{
+    width: 100% !important;
+    /* height: 490px !important; */
+    position: relative !important;
+    overflow: hidden;
+}
+.components-section .components-bounced.components-editing .components-all-app{
+    /* height: 490px !important; */
+}
+.components-section .components-bounced .components-all-app *{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.components-section .components-bounced .components-all-app .components-mask {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  background: rgba(0,0,0,0.7) !important;
+  display: none !important;
+}
+
+/*  */
+.components-section .components-bounced .compnonents-downlode-app {
+  /* width: 100% !important;
+    height: 40px !important;
+    background: url(../images/components-downlode-qrcode.png) no-repeat center !important; */
+  cursor: pointer !important;
+  /* position: relative !important; */
+  position: absolute;
+  width: 219px;
+  height: 28px;
+  background: url(../images/components-downlode-qrcode-re.png) no-repeat center !important;
+  background-size: contain;
+  top: 153px;
+  right: 0;
+
+  z-index: 11 !important;
+}
+.components-section .components-bounced.components-editing .compnonents-downlode-app {
+  top: 135px;
+}
+.components-section .components-bounced .compnonents-downlode-aiclass {
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: -moz-linear-gradient(right,rgba(0,0,0,0), rgba(0,0,0,1));
+  background: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,1));
+  cursor: pointer !important;
+  position: absolute;
+  width: 219px;
+  height: 28px;
+  background-size: contain;
+  top: 153px;
+  right: 0;
+  z-index: 11 !important;
+  line-height: 28px;
+  text-align: right;
+  padding-right: 13px;
+  color: #4c9eff;
+}
+.components-section .components-bounced.components-editing .compnonents-downlode-aiclass {
+  top: 135px;
+}
+.components-section .components-bounced .conponents-qrcode {
+  width: 210px !important;
+  height: 219px !important;
+  position: absolute !important;
+  /* left: 0 !important; */
+  right: 10px !important;
+  top: 184px;
+  /* margin: auto !important; */
+  /* bottom: 47px !important; */
+  /* background: url(../images/components-qrcode.png) no-repeat center !important; */
+  background: url(../images/components-qrcode2.png) no-repeat center !important;
+  background-size: contain !important;
+  display: none !important;
+}
+.components-section .components-bounced.components-editing .conponents-qrcode {
+  top: 166px;
+}
+.components-section .components-bounced .conponents-qrcode.active {
+  display: block !important;
+}
+/* 预览模式 2018.01.15 */
+.components-section.components-preview .components-footer .components-the-more,
+.components-section.components-preview .components-footer .components-other-app ul.components-common-relosotion,
+.components-section.components-preview .components-footer .components-left,
+.components-section.components-preview .components-footer .components-middle {
+  opacity: 0 !important;
+  display: none !important;
+}
+/* 3.1 */
+.components-section.components-preview .components-footer .components-the-more {
+  /* cursor: default !important; */
+}
+.components-section.components-preview .components-footer .components-other-app ul.components-common-relosotion li,
+.components-section.components-preview .components-footer .components-other-app ul.components-common-relosotion li:nth-child(8) {
+  display: none !important;
+}
+.components-section.components-preview .components-footer .components-tool-tab .components-left,
+.components-section.components-preview .components-footer .components-tool-tab .components-middle {
+  width: 0 !important;
+}
+.components-section.components-preview .components-footer .components-tool-tab,
+.components-section.components-preview .components-footer .components-tool-tab .components-right{
+    text-align: center !important;
+}
+.components-section.components-preview .components-footer .components-tool-tab .components-right{
+    float: none !important;
+}
+.components-section.components-preview .components-footer .components-user-login{
+    /* display: none !important; */
+}
+.components-section.components-preview .components-footer .components-user-login .components-phone{
+    display: none;
+}
+
+
+/* 体验模式 2018.01.15*/
+/* .components-section.components-no-class .components-bounced .components-all-app .components-mask,
+.components-section.components-no-unit .components-bounced .components-all-app .components-mask,
+.components-section.components-no-class-no-unit .components-bounced .components-all-app .components-mask
+{
+    display: block !important;
+}
+
+.components-section.components-no-class .components-bounced .components-lesson-info .components-change-less,
+.components-section.components-no-unit .components-bounced .components-lesson-info .components-change-less,
+.components-section.components-no-class-no-unit .components-bounced .components-lesson-info .components-change-less
+{
+    background: black !important;
+    color: rgba(255,255,255,0.2) !important;
+    cursor: default !important;
+}
+.components-section.components-no-class .components-other-app ul.components-common-relosotion li.components-lockscreen,
+.components-section.components-no-unit .components-other-app ul.components-common-relosotion li.components-lockscreen,
+.components-section.components-no-class-no-unit .components-other-app ul.components-common-relosotion li.components-lockscreen
+{
+    background: url(../images/lock-none.png) no-repeat center !important;
+    cursor: default !important;
+} */
+
+/* 2018.01.26 体验模式下 锁屏按钮要置灰*/
+/* .components-section.components-no-class .components-footer .components-tool-tab .components-left,
+.components-section.components-no-unit .components-footer .components-tool-tab .components-left,
+.components-section.components-no-class-no-unit .components-footer .components-tool-tab .components-left
+{
+    opacity: 0 !important;
+}
+.components-section.components-no-class .components-footer .components-tool-tab .components-left li,
+.components-section.components-no-unit .components-footer .components-tool-tab .components-left li,
+.components-section.components-no-class-no-unit .components-footer .components-tool-tab .components-left li{
+    display: none !important;
+} */
+.components-section .components-bounced .components-all-app .components-mask .components-mask-box{
+    margin-top: 125px !important;
+    width: 100% !important;
+    height: 200px !important;
+}
+.components-section .components-bounced .components-all-app .components-mask .components-mask-box .components-mask-box-logo{
+    width: 100% !important;
+    height: 103px !important;
+    background: url(../images/notice.png) no-repeat center !important;
+}
+/* .components-section.components-no-class .components-bounced .components-all-app .components-mask .components-mask-box .setclass{
+    display: block !important;
+}
+.components-section.components-no-unit .components-bounced .components-all-app .components-mask .components-mask-box .setbook{
+    display: block !important;
+} */
+/* .components-section.components-no-class-no-unit .components-bounced .components-all-app .components-mask .components-mask-box .setbookandclass{
+    display: block !important;
+} */
+.components-section .components-bounced .components-all-app .components-mask .components-mask-box span{
+    height: 80px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    color: rgba(255,255,255,0.8) !important;
+    line-height: 33px !important;
+}
+.components-section .components-bounced .components-all-app .components-mask .components-mask-box .setclass{
+    width: 227px !important;
+    margin-left: 101px !important;
+    display: none !important;
+}
+.components-section .components-bounced .components-all-app .components-mask .components-mask-box .setbook{
+    width: 225px !important;
+    margin-left: 108px !important;
+    display: none !important;
+}
+.components-section .components-bounced .components-all-app .components-mask .components-mask-box .setbookandclass{
+    width: 282px !important;
+    margin-left: 84px !important;
+    display: none !important;
+}
+.components-section .components-bounced .components-all-app .components-top{
+    width: 23% !important;
+    height: 56px !important;
+    margin-left: 28px !important;
+    line-height:69px !important;
+    font-size: 16px !important;
+    color: rgba(255,255,255,0.5) !important;
+    text-align: left !important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo{
+    width: calc(100% - 40px) !important;
+    /* height: 450px !important; */
+    margin-left: 28px !important;
+    display: block !important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo .components-remove{
+    display: none !important;
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    line-height: 65px !important;
+    float: left !important;
+    background: #2D343F !important;
+    color: rgba(255,255,255,0.3) !important;
+    cursor: pointer !important;
+    margin: 28px 16px 0px 10px !important;
+    font-size: 13px !important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li{
+    width: 86px !important;
+    height: 94px !important;
+    float: left !important;
+    cursor: pointer !important;
+    margin: 5px 10px 9px 0px !important;
+    position: relative !important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li .components-photo{
+    width: 76px !important;
+    height: 66px !important;
+    margin: 0 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.components-section .components-bounced.components-editing .components-all-app .components-all-photo li.selected .components-photo{
+    background: url(../images/bg-red.png) no-repeat center !important;
+    background-size:contain !important;
+}
+.components-section .components-bounced.components-editing .components-all-app .components-all-photo li.selected .components-photo .linkUrl{
+    display: block!important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li .components-photo .linkUrl{
+    display: none!important;
+}
+.components-section .components-bounced.components-editing .components-all-app .components-all-photo li .components-photo .linkUrl{
+    display: none!important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li .components-photo img{
+    display: block !important;
+    margin: 4px 4px !important;
+    width: 68px;
+    padding: 0px 7px!important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li span{
+    display: block !important;
+    width: 100% !important;
+    height: 24px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    color: rgba(255,255,255,0.5) !important;
+    margin:0 !important;
+    position: static !important;
+    font-size: 13px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.components-section .components-bounced.components-editing .components-all-app .components-all-photo li.active .components-selected{
+    width: 34px !important;
+    height: 34px !important;
+    background:  url(../images/selected.png) no-repeat center !important;
+    position: absolute !important;
+    right: 2px !important;
+    top: -3px !important;
+}
+.components-section .components-bounced.components-applist-show{
+    display: block !important;
+    height: 640px;
+    z-index: 2000;
+}
+.components-section .components-bounced.components-editing .components-temp-app{
+    display: block !important;
+}
+.components-section .components-bounced.components-editing .components-lesson-info{
+    display: none !important;
+}
+.components-section .components-bounced.components-editing .components-all-app .components-all-photo .components-remove{
+    display: block !important;
+}
+/* 框架-xp系统下 提示框 */
+.components-section .components-notice {
+  width: 460px !important;
+  height: 60px !important;
+  background: #2e2e2e !important;
+  border-radius: 3px !important;
+  box-shadow: 4px 6px 5px 0 rgba(0,0,0,0.3) !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+  bottom: 74px !important;
+  font-size: 16px !important;
+  text-align: center !important;
+  line-height: 60px !important;
+  color: rgba(255,255,255,0.9) !important;
+  display: none !important;
+  z-index: 3000;
+}
+.components-section .components-notice.notice {
+  display: block !important;
+}
+/* 2018.01.26 1024分辨率下 右下角的按钮只显示全屏按钮，其余的隐藏 */
+/* .components-section.components-resolution .components-other-app ul.components-common-relosotion li:not(.components-fullscreen){
+    display: none !important;
+} */
+
+/* 3.7 开通智慧课堂提示框 */
+.components-section .open-smclass-sign {
+  width: 646px !important;
+  height: 330px !important;
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  top: 0 !important;
+  margin: auto !important;
+  background: url(../images/open-smclass-sign.png) no-repeat center !important;
+  display: none !important;
+}
+.components-section .open-smclass-sign.active {
+  display: block !important;
+}
+.components-section .open-smclass-sign .components-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  margin: 18px 22px !important;
+  cursor: pointer !important;
+}
+
+#otherToolAppUlCom .lockscreenHintON {
+  position: absolute;
+  width: 192px;
+  height: 60px;
+  left: -140px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  border-radius: 3px;
+  line-height: 60px;
+  top: -57px;
+  display: none;
+}
+#otherToolAppUlCom .lockscreenHintOFF {
+  position: absolute;
+  width: 192px;
+  height: 60px;
+  left: -140px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  border-radius: 3px;
+  line-height: 60px;
+  top: -57px;
+  display: none;
+}
+/* 3.14.0 预览页底部增加返回 */
+
+.components-tool-close {
+  display: none;
+  position: absolute;
+  height: 64px;
+  line-height: 64px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 72px;
+  right: 30px;
+  background: url(../images/preclose.png) no-repeat 0 23px;
+  padding-left: 22px;
+  z-index: 12;
+}
+.overtimeModal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 500px;
+  min-height: 140px;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  background-color: #fff;
+  z-index: 100000;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.modal-header {
+  padding: 15px;
+  color: #333;
+}
+.modal-title {
+  font-size: 24px;
+  color: #333;
+  margin: 25px 0 0 0;
+}
+.modal-body {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+.modal-body-text {
+  color: #333;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  border-color: #46b8da;
+  margin-left: 5px;
+  background-color: #fff;
+}
+
+.open-custom {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  background: url(../images/open-custom.png) no-repeat;
+  cursor: pointer;
+}
+.custom-page-list-box {
+  padding-inline-start: 0!important;
+  margin-block-start: 0!important;
+  margin-block-end: 0!important;
+  width: 100%!important;
+  display: none;
+  justify-content: center!important;
+  align-items: center!important;
+  height: 40px!important;
+  position: absolute!important;
+  bottom: 0!important;
+  padding: 24px 0 12px 0!important;
+}
+.custom-page-list-box>li {
+  width: 20px!important;
+  height: 4px!important;
+  background: red;
+  margin-right: 12px!important;
+  background: rgba(63,85,110,1)!important;
+  border-radius: 2px!important;
+  cursor: pointer!important;
+}
+.custom-page-list-box>li.active {
+  background: rgba(179,214,255,1)!important;
+}
+.components-all-photo-ul-box {
+  width: 388px!important;
+  height: 450px !important;
+  margin-left: 28px !important;
+  display: block !important;
+}
+.components-all-outer {
+  height: 450px!important;
+  display: flex!important;
+  flex-direction: column!important;
+  flex-wrap: wrap!important;
+  transition: all 0.3s ease 0s!important;
+}
+.noshow {
+  visibility: hidden!important;
+}
+.components-plan-div {
+  border-radius: 6px!important;
+  background: #1eeeae;
+  color: #fff!important;
+  font-size: 12px!important;
+  font-weight: bold!important;
+  height: 46px!important;
+  width: 46px!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+}
+.components-plan-div p {
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  display: -webkit-box!important;
+  -webkit-box-orient: vertical!important;
+  -webkit-line-clamp: 2!important;
+  line-height: 18px!important;
+  word-break: break-all;
+}
+
+.foot-self-bg {
+  width: 24px!important;
+  height: 24px!important;
+  display: block;
+  background: url(./../images/footSelfBg.png) no-repeat!important;
+  margin: 0 auto!important;
+  background-size: contain!important;
+}
+/*弹窗*/
+.self-mask {
+  display: none;
+  z-index: 2030;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.4);
+}
+.self-url-box .self-warn-info {
+  position: absolute!important;
+  width: 190px!important;
+  height: 40px!important;
+  background: rgba(0,0,0,1)!important;
+  opacity: 0.7!important;
+  border-radius: 4px!important;
+  left: 50%!important;
+  top: 50%!important;
+  font-size: 12px!important;
+  font-weight: 500;
+  color: rgba(255,255,255,1)!important;
+  line-height: 40px!important;
+  text-align: center!important;
+  transform: translate(-50%,-50%)!important;
+  z-index: 99!important;
+  display: none;
+}
+.self-url-box {
+  display: none;
+  position: absolute!important;
+  left: 50%!important;
+  top: 64px!important;
+  min-height: 252px!important;
+  width: 800px!important;
+  margin-left: -400px!important;
+  /* margin-top: -630px; */
+  background: rgba(255,255,255,1)!important;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12)!important;
+  border-radius: 4px!important;
+  padding: 20px 20px 0 37px!important;
+  z-index: 2030;
+}
+.self-url-box .add-content .self-url-header {
+  height: 99px!important;
+  width: 100%!important;
+  position: relative!important;
+}
+.self-url-box .add-content .self-url-header .header-text {
+  font-size: 20px!important;
+  font-weight: bold!important;
+  color: rgba(33,33,33,1)!important;
+  position: absolute!important;
+  top: 10px!important;
+  left: 1px!important;
+}
+.self-url-box .add-content .self-url-header .header-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 12px;
+  width: 12px;
+  background: url(./../images/modalClose.png) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.self-url-box .add-content .self-editor-add {
+  height: 154px;
+  width: 100%;
+  position: relative;
+}
+.self-url-box .add-content .self-editor-add .splite-line {
+  width: 726px;
+  height: 1px;
+  background: rgba(204,204,204,1);
+  position: absolute;
+  bottom: 0;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content {
+  height: 153px;
+  display: flex;
+  flex-direction: row;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-pic {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(0deg,rgba(33,101,225,1),rgba(86,101,247,1));
+  box-shadow: 0 1px 16px 0 rgba(2,47,136,0.08);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-pic p {
+  min-height: 23px;
+  width: 74px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 27px;
+  word-break: break-all;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-warning-info {
+  margin-left: 44px;
+  margin-top: 11px;
+  color: rgba(208,33,33,1);
+  font-size: 12px;
+  display: none;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-add-form-url {
+  margin-left: 44px;
+  padding-top: 11px;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-add-form-name {
+  margin-left: 44px;
+  padding-top: 37px;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-add-form-url span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0,0,0,1);
+  opacity: 0.87;
+}
+
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-add-form-url input {
+  border: none;
+  border-bottom: 1px solid rgba(204,204,204,1);
+  width: 321px;
+  color: rgba(33,33,33,1);
+  margin-left: 39px;
+}
+
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-add-form-name span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0,0,0,1);
+  opacity: 0.87;
+}
+
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-form .self-add-form-name input {
+  border: none;
+  border-bottom: 1px solid rgba(204,204,204,1);
+  width: 321px;
+  color: rgba(33,33,33,1);
+  margin-left: 39px;
+}
+.self-url-box .add-content .self-editor-add .self-editor-add-content .self-add-btn {
+  margin-left: 82px;
+  width: 120px;
+  height: 32px;
+  background: rgba(34,138,255,1);
+  border-radius: 16px;
+  text-align: center;
+  line-height: 32px;
+  color: rgba(255,255,255,1);
+  margin-top: 30px;
+  cursor: pointer;
+}
+.noacitve {
+  background: rgba(34,138,255,1)!important;
+  opacity: 0.3!important;
+}
+.item-no-add {
+  color: gray!important;
+}
+.self-url-box .add-item-box {
+  width: 100%!important;
+  margin-top: 50px!important;
+  margin-bottom: 57px!important;
+  position: relative!important;
+}
+.self-url-box .add-item-box .self-url-header {
+  margin-bottom: 43px!important;
+}
+.self-url-box .add-item-box .self-url-header .header-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(33,33,33,1);
+  position: relative;
+  top: 0;
+  left: 1px;
+  text-align: left;
+}
+.self-url-box .add-item-box .itembox {
+  overflow: scroll;
+  height: 117px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.self-url-box .add-item-box .itembox .item {
+  width: 50%;
+  height: 48px;
+  margin-bottom: 21px;
+  color: #000;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.self-url-box .add-item-box .itembox .item .item-pic {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(0deg,rgba(33,101,225,1),rgba(86,101,247,1));
+  box-shadow: 0 1px 16px 0 rgba(2,47,136,0.08);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.self-url-box .add-item-box .itembox .item .item-pic p {
+  min-height: 11px;
+  width: 41px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 18px;
+  word-break: break-all;
+}
+.self-url-box .add-item-box .itembox .item .right-btn {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.info .info-text-box {
+  margin-left: 15px!important;
+  font-size: 12px!important;
+  font-weight: 500!important;
+  color: rgba(33,33,33,1)!important;
+  height: 40px!important;
+}
+.info .info-text-box .info-text-box-url {
+  margin-bottom: 8px;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(33,33,33,1);
+  width: 195px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+.info .info-text-box .info-text-box-name {
+  font-size: 12px;
+  font-weight: 500;
+  height: 16px;
+  line-height: 16px;
+  color: rgba(33,33,33,1);
+  width: 195px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+.item-delete-btn {
+  margin-right: 50px!important;
+  margin-left: 15px!important;
+}
+.item .right-btn .item-edit-btn {
+  width: 24px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(66,133,244,1);
+  line-height: 12px;
+  cursor: pointer;
+}
+.item .right-btn .item-delete-btn {
+  width: 24px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(66,133,244,1);
+  line-height: 12px;
+  cursor: pointer;
+}
+.info-text-input-box {
+  margin-left: 15px;
+  display: none;
+}
+.info-text-input-box .self-add-form-name input {
+  height: 16px;
+  border: none;
+  border-bottom: 1px solid rgba(204,204,204,1);
+  width: 160px;
+  color: rgba(33,33,33,1);
+}
+.info-text-input-box .self-add-form-url input {
+  height: 16px;
+  border: none;
+  border-bottom: 1px solid rgba(204,204,204,1);
+  width: 160px;
+  color: rgba(33,33,33,1);
+  margin-bottom: 12px;
+}
+
+.itembox::-webkit-scrollbar {
+  width: 10px!important;
+  height: 2px!important;
+  display: block;
+  /*background-color: #ddd;*/
+}
+
+/* 设置滚动条的样式 */
+.itembox::-webkit-scrollbar {
+  width: 5px!important;
+  height: 1px!important;
+  display: block;
+}
+
+/* 滚动槽 */
+.itembox::-webkit-scrollbar-track {
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  border-radius: 10px!important;
+  width: 10px!important;
+  background: none!important;
+}
+/* 滚动条滑块 */
+.itembox::-webkit-scrollbar-thumb {
+  border-radius: 2px!important;
+  background: #bbb!important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)!important;
+  border: none!important;
+}
+.itembox::-webkit-scrollbar-thumb:window-inactive {
+  background: #eee!important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li.self-app-li .components-photo {
+  width: 46px!important;
+  height: 46px!important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -33px!important;
+  margin-left: -23px!important;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 16px 0 rgba(2,47,136,0.08);
+  border-radius: 6px;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li.self-app-li .components-photo p {
+  min-height: 11px!important;
+  width: 46px!important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 18px;
+  word-break: break-all;
+}
+.ellipsisRows {
+  max-height: 37px!important;
+  width: 46px!important;
+  text-align: center!important;
+  font-size: 12px!important;
+  font-weight: bold!important;
+  color: #fff!important;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  display: -webkit-box!important;
+  /*! autoprefixer: off */
+  -moz-box-orient: vertical!important;
+  -webkit-box-orient: vertical!important;
+  -webkit-line-clamp: 2!important;
+  line-height: 18px!important;
+  word-break: break-all!important;
+}
+.components-section .components-bounced .components-all-app .components-all-photo li.self-app-li span {
+  position: absolute!important;
+  left: 50%!important;
+  bottom: -2px!important;
+  margin-left: -43px!important;
+  top: 70px!important;
+}
+
+#componentPreviewClose.previewCouseware {
+  display: block;
+  color: white;
+  text-align: center;
+}
+@media all and (max-width: 1024px) {
+  .components-section .components-footer .components-other-app ul.components-common-relosotion li.components-lockscreen {
+    display: none !important;
+  }
+  .components-section .components-bounced .components-all-app .components-all-photo li.self-app-li span {
+    position: absolute!important;
+    left: 50%!important;
+    bottom: -2px!important;
+    margin-left: -43px!important;
+    top: 66px!important;
+  }
+}
+.xl-footer-hint {
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2040;
+}
